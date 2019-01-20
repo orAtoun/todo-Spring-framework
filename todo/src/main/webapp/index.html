@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="js/vendor/jquery-2.2.3.js"></script>
+    <script src="js/BoardService.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+</head>
+
+<body class="hm-gradient">
+<main>
+    <div class="container mt-5">
+        <div class="row" id="add-todo-form">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center default-text py-3"><i class="fas fa-tasks"></i> Add new Todo</h3>
+                        <div class="md-form">
+                            <i class="fas fa-pen prefix grey-text"></i>
+                            <input type="text" id="title" name="title" class="form-control">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fas fa-calendar prefix grey-text"></i>
+                            <input type="text" name="date" id="datetime" class="form-control"
+                                   placeholder="Please fil in the following format: YYYY-MM-DD HH:MM:SS">
+                            <label for="datetime">Date</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fas fa-text prefix grey-text"></i>
+                            <textarea id="content" name="content" class="md-textarea"></textarea>
+                            <label for="content">Content</label>
+                        </div>
+                        <div class="text-right">
+                            <button id="save-todo" class="btn btn-default waves-effect waves-light">save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="all-todos">
+        </div>
+    </div>
+</main>
+
+<!-- MDB core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+</body>
+</html>
